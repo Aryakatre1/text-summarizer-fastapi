@@ -59,5 +59,5 @@ Future plans for this project include:
 - Deploying to a cloud platform (e.g., Google Cloud Run) for public accessibility.
 - Building a simple frontend web application to consume the API.
 
-Connect with me on [LinkedIn](https:www.linkedin.com/in/arya-katre-829b82260).
-Email: [your.email@example.com](mailto:katrearya459@gmail.com)
+Connect with me on [https:www.linkedin.com/in/arya-katre-829b82260]
+Email:[mailto:katrearya459@gmail.com]
