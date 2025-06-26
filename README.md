@@ -61,3 +61,43 @@ Future plans for this project include:
 
 Connect with me on [https:www.linkedin.com/in/arya-katre-829b82260]
 Email:[mailto:katrearya459@gmail.com]
+
+### Sentiment Analysis
+
+The API now includes a sentiment analysis endpoint that identifies the emotional tone (positive, negative, or neutral) of input text. This can be useful for quickly gauging the sentiment of reviews, feedback, or any textual data.
+
+**Endpoint:** `POST /sentiment`
+**Request Body:**
+```json
+{
+  "text": "This is a fantastic product! I love it."
+}
+
+Response Body (Example - Positive):
+JSON
+{
+  "label": "POSITIVE",
+  "score": 0.9998
+}
+
+Response Body (Example - Negative):
+JSON
+{
+  "label": "NEGATIVE",
+  "score": 0.9972
+}
+
+Response Body (Example - Neutral/Mixed - model may still pick a dominant one):
+JSON
+{
+  "label": "POSITIVE",
+  "score": 0.5123
+}
+
+Key Technologies Used:
+
+Hugging Face Transformers: Specifically utilizing the distilbert-base-uncased-finetuned-sst-2-english model for sentiment analysis.
+
+FastAPI: For defining the robust API endpoint.
+
+Pydantic: For data validation of request and response models.
